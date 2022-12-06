@@ -1,52 +1,29 @@
-#include "lists.h"
+#include <stddef.h>
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * is_palindrome - checks if a singly linked list is a palindrome
- * @head: beginning node of linked list
- *
- * Return: 0 if not a palindrome, 1 if palindrome
+ * is_palindrome - check if a linked list is a palindrome
+ * @head: first node
+ * Return: 1 if success
+ *         0 if failed
  */
-
 int is_palindrome(listint_t **head)
 {
-	listint_t *rev_list = NULL, *current, *new;
-	int i = 0, j = 0, temp;
+	listint_t *tmp = *head;
+	int values[2048], i = 0, cLoop, limit;
 
-	current = *head;
-	while (current != NULL)
+	if (head == NULL || *head == NULL)
+		return (1);
+	while (tmp != NULL)
 	{
+		values[i] = tmp->n;
 		i++;
-		add_nodeint_end(&rev_list, current->n);
-		current = current->next;
+		tmp = tmp->next;
 	}
-	i--;
-	while (i > 0)
-	{
-		j = 0;
-		current = rev_list;
-		while (j < i && current->next)
-		{
-			temp = current->n;
-			current->n = current->next->n;
-			current->next->n = temp;
-			current = current->next;
-			j++;
-		}
-		i--;
-	}
-	current = *head;
-	new = rev_list;
-	while (current != NULL)
-	{
-		if (current->n != new->n)
-		{
-			free_listint(rev_list);
+	limit = (i % 2 == 0) ? i / 2 : (i + 1) / 2;
+	for (cLoop = 0; cLoop < limit; cLoop++)
+		if (values[cLoop] != values[i - 1 - cLoop])
 			return (0);
-		}
-		current = current->next;
-		new = new->next;
-	}
-	free_listint(rev_list);
 	return (1);
 }

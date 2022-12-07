@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     if num_args > 1:
         for i in range(1, num_args):
-            print(i, ":", sys.argv[1])
+            print(i, ":", sys.argv[i])
 
     else:
         print(":")

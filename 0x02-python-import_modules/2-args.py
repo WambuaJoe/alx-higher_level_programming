@@ -2,13 +2,13 @@
 if __name__ == "__main__":
     from sys import argv
 
-    num_args = len(argv)
-    if num_args == 1:
-        print("No arguments were passed.")
-    elif num_args == 2:
-        print("One argument was passed: ")
+    count = len(argv)
+    if count == 1:
+        print("0 arguments.")
+    elif count == 2:
+        print("{:d} argument:".format(count - 1))
     else:
-        print(f"{num_args} arguments were passed: ")
+        print("{:d} arguments:".format(count - 1))
 
-    for i in range(1, num_args):
-        print(f"{i}: {argv[i]}")
+    for i in range(1, count):
+        print("{:d}: {:s}".format((i), argv[i]))

@@ -6,8 +6,8 @@ if __name__ == "__main__":
     print("Number of argument(s): ", num_args)
 
     if num_args > 1:
-        for i in range(1, num_args):
-            print(i, ":", sys.argv[i])
+        for i in enumerate(sys.argv[1:], 1):
+            print(i, ":", arg)
 
     else:
         print(":")

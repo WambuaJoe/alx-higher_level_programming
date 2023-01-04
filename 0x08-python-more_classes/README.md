@@ -1,0 +1,24 @@
+0x08 Python - More Classes and Objects
+- define object-oriented programming
+- define a class
+- differentiate between an object and instance
+- define an attribute
+- differentiate between a class and an object or instance
+- define public, protected and private attributes and their uses
+- define a method
+- define 'self'
+- special __init__ method and its use
+- Data Abstraction, Data Encapsulation and Information Hiding
+- define a property
+- differentiate between an attribute and a property
+- pythonic way to write getters and setters
+- special __str__ & __repr__ methods and their uses
+- differentiate between __str__ and __repr__
+- define a class attribute
+- differentiate between an object attribute and a class attribute
+- define a class method
+- define a static method
+- dynamic creation of arbitrary new attributes for existing instances of a class
+- binding attributes to objects and classes
+- how Python finds the attributes of and instance(s) of a class
+- use of the getattr function

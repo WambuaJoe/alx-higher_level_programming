@@ -1,4 +1,0 @@
-- Dynamic libraries - how they work, creating one and how to use
-- Environment variable $LD_LIBRARY_PATH and its use
-- Differences between static and shared libraries
-- Basic usage - nm, ldd, ldconfig

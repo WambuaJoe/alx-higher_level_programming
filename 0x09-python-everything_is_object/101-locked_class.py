@@ -1,6 +1,11 @@
+#!/usr/bin/bash
+""" Defines a class """
+
+
 class LockedClass:
-    def setattr(self, name, value):
-        if name == "first_name":
-            self.dict[name] = value
-        else:
-            raise AttributeError("Cannot set attribute '{}'".format(name))
+    """
+    Prevent user from instantiating new LockedClass attributes
+    for anything but attributes called 'first_name'.
+    """
+
+    __slots__ = ["first_name"]

@@ -13,6 +13,6 @@ if last_digit > 5:
     print(output.format(number, last_digit), "and is greater than 5")
 # check for number less than 6 and not 0
 elif last_digit < 6 and last_digit != 0:
-    print(output.format(number, last_digit), "and is less than 6 but not 0")
+    print(output.format(number, last_digit), "and is less than 6 and not 0")
 else:
     print(output.format(number, last_digit), "and is 0")

@@ -3,7 +3,9 @@
 
 
 class Rectangle:
-    """ Rectangle Class"""
+    """ 
+    implement a Rectangle Class
+    """
 
     number_of_instances = 0
     print_symbol = "#"

@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ 
+    """
     implement a Rectangle Class
     """
 

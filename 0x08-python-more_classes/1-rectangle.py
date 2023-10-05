@@ -3,12 +3,15 @@
 
 
 class Rectangle:
-    """ define a rectangle with the height
-    and width attributes
-    """
+    """ represents a rectangle """
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        """ Initialize rectangle with optional width & height
+            Args:
+                width (int, optional): rectangle width, defaults to 0
+                height (int, optional): rectangle height, defaults to 0 
+        """
+        self.width = width
+        self.height = height
 
     @property
     def height(self):

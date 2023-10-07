@@ -58,14 +58,11 @@ class Rectangle:
 
     def __str__(self):
         """ string representation for the rectangle class """
-        if self.__height == 0 or self.__width == 0:
-            return ""
-        rectangle_area = ''
-        for a in range(self.__height):
-            rectangle_area += str(self.print_symbol) * self.__width
-            if a != self.__height - 1:
-                rectangle_area += "\n"
-        return rectangle_area
+        string = ""
+        if self.__width != 0 and self.__height != 0:
+            string += "\n".join(str(self.print_symbol) * self.__width
+                                for j in range(self.__height))
+        return string
 
     def __repr__(self):
         """ return string representation that can recreate the

@@ -62,7 +62,7 @@ class Rectangle:
             return ""
         rectangle_area = ''
         for a in range(self.__height):
-            rectangle_area += "#" * self.__width
+            rectangle_area += str(self.print_symbol) * self.__width
             if a != self.__height - 1:
                 rectangle_area += "\n"
         return rectangle_area

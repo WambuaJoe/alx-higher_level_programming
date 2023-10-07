@@ -70,8 +70,7 @@ class Rectangle:
         """ return string representation that can recreate the
             rectangle object
         """
-        class_name = type(self).__name__
-        return "{}({}, {})".format(class_name, self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
         """ print text on deletion of an instance of the class

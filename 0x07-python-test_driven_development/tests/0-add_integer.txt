@@ -24,7 +24,7 @@ Add integer to a float
     6
 
 Add 2 float numbers
-    >>> add_integer(4.5, 5,5)
+    >>> add_integer(4.5, 5.5)
     9
 
 Subtracting 1 from 98

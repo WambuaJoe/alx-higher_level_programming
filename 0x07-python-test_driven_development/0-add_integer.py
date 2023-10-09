@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""0-add_integer module"""
+
+
 def add_integer(a, b=98):
     """ this function calculates the addition of 2
         integers & returns the value of the sum
@@ -16,5 +19,3 @@ def add_integer(a, b=98):
         b = int(b)
 
     return a + b
-
-print(add_integer(float('inf'), float('-inf')))

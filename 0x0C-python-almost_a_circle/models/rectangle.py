@@ -55,7 +55,7 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("x must be >=0")
         else:
-            self.__x
+            self.__x = value
 
     @property
     def y(self):
@@ -69,4 +69,4 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("y must be >=0")
         else:
-            self.__y
+            self.__y = value

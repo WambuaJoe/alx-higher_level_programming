@@ -7,11 +7,11 @@ class Rectangle(Base):
     """ create Rectangle class, that inherits from Base class """
     def __init__(self, width, height, x=0, y=0):
         """ initialize rectangle width, height, x, y """
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)
 
     @property
     def width(self):
@@ -50,10 +50,11 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        if not isinstance(value, int):
+        """ set value of x"""
+        if not type(value) == int:
             raise TypeError("x must be an integer")
         elif value < 0:
-            raise ValueError("x must be >=0")
+            raise ValueError("x must be >= 0")
         else:
             self.__x = value
 
@@ -64,9 +65,10 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        if not isinstance(value, int):
+        """ set value of y"""
+        if not type(value) == int:
             raise TypeError("y must be an integer")
         elif value < 0:
-            raise ValueError("y must be >=0")
+            raise ValueError("y must be >= 0")
         else:
             self.__y = value

@@ -7,7 +7,7 @@ class Square(Rectangle):
     """ square class that inherits from rectangle class"""
     def __init__(self, size, x=0, y=0, id=None):
         """ initialize square attributes """
-        super().__init__(size, size, x, y)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """ implement str representation """

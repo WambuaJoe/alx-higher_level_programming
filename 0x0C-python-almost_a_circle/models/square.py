@@ -24,3 +24,4 @@ class Square(Rectangle):
         """ get size of square """
         self.width = value
         self.height = value
+

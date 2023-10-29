@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
 """
-module contains a function that adds 2 integers.
+This module contains a function that adds 2 integers.
 """
 
 
 def add_integer(a, b=98):
-    """
-    This function adds 2 integers
+    """This function adds 2 integers.
     Args:
         a (int): The first number to be added.
         b (int): The second number to be added.

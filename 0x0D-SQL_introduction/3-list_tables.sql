@@ -1,2 +1,2 @@
 -- list all tables of a DB in server
-SHOW TABLES;
+SHOW TABLES IN hbtn_0c_0;

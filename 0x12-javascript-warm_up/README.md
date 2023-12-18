@@ -7,7 +7,7 @@ In this directory, Javascript will be used for:
 <ol>
     <li>Scripting (same as for Python)</li>
     <li>Web front-end</li>
-
+</ol>
 For learning all the basic concepts of Javascript, a lot of scripting will be done, and afterwards make our AirBnB project by integrating Javascript & JQuery into it
 
 ### Learning Objectives

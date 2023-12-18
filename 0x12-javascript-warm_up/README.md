@@ -11,7 +11,7 @@ In this directory, Javascript will be used for:
 For learning all the basic concepts of Javascript, a lot of scripting will be done, and afterwards make our AirBnB project by integrating Javascript & JQuery into it
 
 ### Learning Objectives
-<ol>
+<ul>
     <li>Why JavaScript programming is amazing</li>
     <li>How to run a JavaScript script</li>
     <li>How to create variables and constants</li>
@@ -28,7 +28,7 @@ For learning all the basic concepts of Javascript, a lot of scripting will be do
     <li>What are the arithmetic operators and how to use them</li>
     <li>How to manipulate dictionary</li>
     <li>How to import a file</li>    
-</ol>
+</ul>
 
 ## More info
 ### Install Node 14

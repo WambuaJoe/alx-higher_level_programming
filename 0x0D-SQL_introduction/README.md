@@ -1,4 +1,4 @@
-<h1>0x0D. SQL - Introduction</h2>
+<h1>0x0D. SQL - Introduction</h1>
 
 For this project, we take a lot at databases. Files contained within are attempts at finding solutions to the project tasks, queries that are fit to be SQL readable and executable
 

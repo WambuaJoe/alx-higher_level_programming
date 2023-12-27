@@ -1,0 +1,1 @@
+-- update score in second_table

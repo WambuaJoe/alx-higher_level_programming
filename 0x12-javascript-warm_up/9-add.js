@@ -9,7 +9,7 @@ const valInt1 = Number(process.argv[2]);
 const valInt2 = Number(process.argv[3]);
 
 if (Number.isNaN(valInt1) || Number.isNaN(valInt2)) {
-  console.log('Nan');
+  console.log('NaN');
 } else {
   add(valInt1, valInt2);
 }

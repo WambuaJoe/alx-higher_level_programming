@@ -6,12 +6,16 @@ This module contains a function that adds 2 integers.
 
 
 def add_integer(a, b=98):
-    """This function adds 2 integers.
+    """
+    This function adds two integers together.
+
     Args:
         a (int): The first number to be added.
-        b (int): The second number to be added.
+        b (int): The second number to be added. (default value: 98)
+
     Returns:
-        int: The return value. The sum of a and b.
+        int: The sum of a and b.
+
     Raises:
         TypeError: If either of a or b is not an integer or a float.
     """

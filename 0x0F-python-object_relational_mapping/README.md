@@ -77,4 +77,4 @@ A Python Virtual Environment is an isolated environment where you can install pr
 
 ## Contributing
 
-Contributions are welcome! Follow the guidelines in the [README.md]() file for submitting issues or pull requests.
+Contributions are welcome! Follow the guidelines in the [README.md](https://github.com/WambuaJoe/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/README.md) file for submitting issues or pull requests.

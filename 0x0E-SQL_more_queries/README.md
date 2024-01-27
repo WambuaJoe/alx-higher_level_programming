@@ -1,7 +1,7 @@
 
 # 0x0E. SQL - More queries
 
-This project focuses on expanding your knowledge and skills in SQL. Entailed in thes [README]() are the key concepts covered and tasks accomplished in this project.
+This project focuses on expanding your knowledge and skills in SQL. Entailed in thes [README](https://github.com/WambuaJoe/alx-higher_level_programming/tree/main/0x0E-SQL_more_queries#readme) are the key concepts covered and tasks accomplished in this project.
 
 ## Learning Objectives
 

@@ -3,7 +3,7 @@
 
 class Rectangle {
   constructor (w, h) {
-    if (w >= 0 && h >= 0 && Number.isInteger(w) && Number.isInteger(h)) {
+    if (w >= 0 && h >= 0) {
       this.width = w;
       this.height = h;
     } else {
@@ -22,17 +22,13 @@ class Rectangle {
 
   //   exchange width & height
   rotate () {
-    if (this.width > 0 && this.height > 0) {
       [this.width, this.height] = [this.height, this.width];
-    }
   }
 
   //   multiply width & heigth by 2
   double () {
-    if (this.width > 0 && this.height > 0) {
-      [this.width, this.height] = [this.width * 2, this.height * 2];
-    }
-  }
+      this.width *= 2;
+      this.height *= 2;
 }
 
 class Square extends Rectangle {

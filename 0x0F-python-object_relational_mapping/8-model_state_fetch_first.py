@@ -10,13 +10,10 @@ from sys import argv
 from model_state import Base, State
 
 if __name__ == "__main__":
-    """print the first State object the database hbtn_0e_6_usa
-    """
-    eng = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(argv[1],
-                                                                    argv[2],
-                                                                    argv[3]))
-    Base.metadata.create_all(eng)
-    Session = sessionmaker(bind=eng)
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
+                           .format(argv[1], argv[2], argv[3]))
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
     session = Session()
     first_state = session.query(State).order_by(State.id).first()
     if first_state is not None:

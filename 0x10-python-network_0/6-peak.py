@@ -1,10 +1,32 @@
 #!/usr/bin/python3
-""" Test function find_peak """
-find_peak = __import__('6-peak').find_peak
+"""
+peak in an unsorted int
+"""
 
-print(find_peak([1, 2, 4, 6, 3]))
-print(find_peak([4, 2, 1, 2, 3, 1]))
-print(find_peak([2, 2, 2]))
-print(find_peak([]))
-print(find_peak([-2, -4, 2, 1]))
-print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))
+
+def find_peak(list_of_integers):
+    """
+    Args:
+        list of intgers: is the list of integers
+    Returns: will return peak of list_of_integers or nothing
+    """
+    size = len(list_of_integers)
+    mi = size
+    mid = size // 2
+
+    if size == 0:
+        return None
+
+    while True:
+        mi = mi // 2
+        if (mid < size - 1 and list_of_integers[mid]
+                < list_of_integers[mid + 1]):
+            if mi // 2 == 0:
+                mi = 2
+            mid = mid + mi // 2
+        elif mi > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
+            if mi // 2 == 0:
+                mi = 2
+            mid = mid - mi // 2
+        else:
+            return list_of_integers[mid]

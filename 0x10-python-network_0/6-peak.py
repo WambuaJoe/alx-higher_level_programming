@@ -1,16 +1,10 @@
 #!/usr/bin/python3
-"""contains the function find_peak"""
+""" Test function find_peak """
+find_peak = __import__('6-peak').find_peak
 
-
-def find_peak(list_of_integers):
-    """finds a peak in a list of unsorted integers"""
-    li = list_of_integers
-    ll = len(li)
-    if ll == 0:
-        return
-    m = ll // 2
-    if (m == ll - 1 or li[m] >= li[m + 1]) and (m == 0 or li[m] >= li[m - 1]):
-        return li[m]
-    if m != ll - 1 and li[m + 1] > li[m]:
-        return find_peak(li[m + 1:])
-    return find_peak(li[:m])
+print(find_peak([1, 2, 4, 6, 3]))
+print(find_peak([4, 2, 1, 2, 3, 1]))
+print(find_peak([2, 2, 2]))
+print(find_peak([]))
+print(find_peak([-2, -4, 2, 1]))
+print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))

@@ -1,11 +1,10 @@
 #!/usr/bin/node
 
 const myArgs = process.argv.slice(2);
-const req = require('request');
+const res = require('request');
+const url = 'https://swapi-api.alx-tools.com/api/films/:id';
 
-req(myArgs[0], (err, res, req) => {
+res(url, (err, res, body) => {
   if (err) throw err;
-
-  const status = res && res.statusCode;
-  console.log(`code: ${status}`);
+  console.log(JSON.parse(body).results[myArgs[0] - 1].title);
 });
